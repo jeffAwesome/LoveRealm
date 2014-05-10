@@ -4,6 +4,8 @@ gem 'rails', '4.0.2'
 
 #gem 'ancestry',            '~> 2.1.0'
 gem 'coffee-rails',        '~> 4.0.0'
+gem 'haml',                '~> 4.0.5'
+gem 'haml-rails'
 #gem 'high_voltage',        '~> 2.1.0'
 gem 'jbuilder',            '~> 1.2'
 gem 'jquery-rails'
