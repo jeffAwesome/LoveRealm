@@ -12,42 +12,73 @@
     %p.notice= notice
     %p.alert= alert
     %header#top.navbar.navbar-fixed-top
-      %navigation.main-menu.left
-        %ul
-          %li.home
-            %a{href: "#"}
-              Home
-            %li
-              %a{href: "#"}
-                Blog
-            %li
-              %a{href: "#"}
-                Christian APPS
-            %li
-              %a{href: "#"}
-                About Us
-            %li
-              %a{href: "#"}
-                About Jesus
-            %li
-              %a{href: "#"}
-                Support Us
+      %div.row.header-top
+        %div.large.container
+          %nav.top-menu.left
+            %ul
+              %li.home
+                %a{href: "#"}
+                  Home
+                %li
+                  %a{href: "#"}
+                    Blog
+                %li
+                  %a{href: "#"}
+                    Christian APPS
+                %li
+                  %a{href: "#"}
+                    About Us
+                %li
+                  %a{href: "#"}
+                    About Jesus
+                %li
+                  %a{href: "#"}
+                    Support Us
 
-      %div#social.left.social-list
-        %ul
-          %li
-            We Are Social:
-          %li.facebook
-            %a{href: "#"}
-              Facebook
-          %li.twitter
-            %a{href: "#"}
-              Twitter
-          %li.googlePlus
-            %a{href: "#"}
-              Google Plus
+          %div#social.left.social-list
+            %ul.main-nav
+              %li
+                We Are Social:
+              %li.facebook
+                %a{href: "#"}
+                  Facebook
+              %li.twitter
+                %a{href: "#"}
+                  Twitter
+              %li.googlePlus
+                %a{href: "#"}
+                  Google Plus
+      %div.header-bottom.large.container
+        %h1#logo
+          %a{href: "#"}
+            %img{src: "assets/logo.png"}
+
+    %div.container
+      %section.side-column.col-lg-2
+        %nav.side-nav
+          %ul
+            %li
+              %a.font-regular{href: "#"} OUR BLOGS
+            %li
+              %a{href: "#"} Home
+            %li
+              %a{href: "#"} News
+            %li
+              %a{href: "#"} Finance
+            %li
+              %a{href: "#"} Ask
+            %li
+              %a{href: "#"} Love
+            %li
+              %a{href: "#"} Christian Walk
+            %li
+              %a{href: "#"} Miscellaneous
+            %li
+              %a{href: "#"} Media
+
+      %section.main-column.col-lg-10
+        = yield
 
 
 
 
-    = yield
