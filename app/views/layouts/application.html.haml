@@ -1,6 +1,9 @@
 !!!
 %html
   %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
     %title LoveRealm
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
@@ -8,4 +11,43 @@
   %body
     %p.notice= notice
     %p.alert= alert
+    %header#top.navbar.navbar-fixed-top
+      %navigation.main-menu.left
+        %ul
+          %li.home
+            %a{href: "#"}
+              Home
+            %li
+              %a{href: "#"}
+                Blog
+            %li
+              %a{href: "#"}
+                Christian APPS
+            %li
+              %a{href: "#"}
+                About Us
+            %li
+              %a{href: "#"}
+                About Jesus
+            %li
+              %a{href: "#"}
+                Support Us
+
+      %div#social.left.social-list
+        %ul
+          %li
+            We Are Social:
+          %li.facebook
+            %a{href: "#"}
+              Facebook
+          %li.twitter
+            %a{href: "#"}
+              Twitter
+          %li.googlePlus
+            %a{href: "#"}
+              Google Plus
+
+
+
+
     = yield
