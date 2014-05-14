@@ -12,8 +12,8 @@
     %p.notice= notice
     %p.alert= alert
     %header#top.navbar.navbar-fixed-top
-      %div.row.header-top
-        %div.large.container
+      .row.header-top
+        .large.container
           %nav.top-menu.left
             %ul
               %li.home
@@ -35,7 +35,7 @@
                   %a{href: "#"}
                     Support Us
 
-          %div#social.left.social-list
+          #social.left.social-list
             %ul.main-nav
               %li
                 We Are Social:
@@ -48,12 +48,27 @@
               %li.googlePlus
                 %a{href: "#"}
                   Google Plus
-      %div.header-bottom.large.container
-        %h1#logo
+      .header-bottom.large.container
+        %h1#logo.pull-left
           %a{href: "#"}
             %img{src: "assets/logo.png"}
 
-    %div.container
+        .seek
+          %form
+            %input.search{name: "", placeholder: "Seek and you shall find!  (Mathew 7:7)", type: "text", value: ""}/
+            %input.magnifier{name: "", placeholder: "", type: "submit", value: ""}/
+
+
+        .pull-right
+          %ul.login
+            %li.login-user.clearfix
+              %span.user-icon
+                %img{src: "assets/login.png"}
+              %a{href: "#"}> Login
+            %li.join
+              %a{href: "#"} Join
+
+    .container
       %section.side-column.col-lg-2
         %nav.side-nav
           %ul
