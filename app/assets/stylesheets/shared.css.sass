@@ -1,12 +1,17 @@
 body
   background: $body-bg
 
+/* Overwrites */
+.container
+  width: 1240px
+
 /* Header */
 .header-bottom
 
 
 #logo
   margin-right: 40px
+  margin-left: 40px
 
 .seek
   background: none repeat scroll 0 0 #FFFFFF
@@ -15,6 +20,8 @@ body
   float: left
   margin-bottom: 23px
   margin-top: 20px
+  max-width: 600px
+  width: 100%
 
 .search
   background: image-url("search-border.png") no-repeat right center
@@ -23,7 +30,9 @@ body
   font-style: italic
   height: 33px
   padding: 10px
-  width: 582px
+  max-width: 580px
+  width: 100%
+  width: 100%
 
 
 .magnifier
@@ -32,4 +41,29 @@ body
   float: left
   margin-top: 9px
   padding: 0 8px
+
+/* Content */
+.box
+  background-color: #FFFFFF
+  border: 1px solid #E2E2E6
+  min-height: 144px
+  height: auto
+  margin-bottom: 24px
+  padding: 8px 8px 10px
+  h1
+    font-size: 20px
+    margin: 0 0 10px
+
+
+ul.list
+  padding-right: 0
+  padding-left: 5px
+  li
+    color: #5F5F5F
+    margin-bottom: 0
+    a
+      color: #C8140F
+      font-family: $font-copy
+      font-size: 14px
+      padding: 10px 5px 10px 10px
 
