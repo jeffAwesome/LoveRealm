@@ -16,103 +16,36 @@
         .large.container
           %nav.top-menu.left
             %ul
-              %li.home
-                %a{href: "#"}
-                  Home
-                %li
-                  %a{href: "#"}
-                    Blog
-                %li
-                  %a{href: "#"}
-                    Christian APPS
-                %li
-                  %a{href: "#"}
-                    About Us
-                %li
-                  %a{href: "#"}
-                    About Jesus
-                %li
-                  %a{href: "#"}
-                    Support Us
+              = render 'layouts/main_nav'
 
           #social.left.social-list
             %ul.main-nav
-              %li
-                We Are Social:
-              %li.facebook
-                %a{href: "#"}
-                  Facebook
-              %li.twitter
-                %a{href: "#"}
-                  Twitter
-              %li.googlePlus
-                %a{href: "#"}
-                  Google Plus
+              = render 'layouts/social_nav'
 
       .nav-collapse.collapse
         %ul.nav
           %li
-            %a.font-regular{href: "#"} OUR BLOGS
-          %li
-            %a{href: "#"} Home
-          %li
-            %a{href: "#"} News
-          %li
-            %a{href: "#"} Finance
-          %li
-            %a{href: "#"} Ask
-          %li
-            %a{href: "#"} Love
-          %li
-            %a{href: "#"} Christian Walk
-          %li
-            %a{href: "#"} Miscellaneous
-          %li
-            %a{href: "#"} Media
-
+            = render 'layouts/side_nav'
 
       .header-bottom.large.container
         %h1#logo.pull-left
-          %a{href: "#"}
-            %img{src: "assets/logo.png"}
+          = link_to '#' do
+            = image_tag "logo.png"
 
         .seek
           %form
             %input.search{name: "", placeholder: "Seek and you shall find!  (Mathew 7:7)", type: "text", value: ""}/
             %input.magnifier{name: "", placeholder: "", type: "submit", value: ""}/
 
-
         .pull-right
           %ul.login
-            %li.login-user.clearfix
-              %span.user-icon
-                %img{src: "assets/login.png"}
-              %a{href: "#"}> Login
-            %li.join
-              %a{href: "#"} Join
+            = render 'layouts/login'
 
     .container.content-container
       %section.side-column.col-lg-2
         %nav.side-nav
           %ul
-            %li
-              %a.font-regular{href: "#"} OUR BLOGS
-            %li
-              %a{href: "#"} Home
-            %li
-              %a{href: "#"} News
-            %li
-              %a{href: "#"} Finance
-            %li
-              %a{href: "#"} Ask
-            %li
-              %a{href: "#"} Love
-            %li
-              %a{href: "#"} Christian Walk
-            %li
-              %a{href: "#"} Miscellaneous
-            %li
-              %a{href: "#"} Media
+            = render 'layouts/side_nav'
 
       %section.main-column.col-lg-10
         = yield
