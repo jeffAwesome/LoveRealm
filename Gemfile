@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 #gem 'ancestry',            '~> 2.1.0'
 
 gem 'coffee-rails',        '~> 4.0.0'
+gem 'exception_handler',   '~> 0.2.7'
 gem 'jbuilder',            '~> 1.2'
 gem 'jquery-rails',        '~> 3.1.0'
 gem 'pg',                  '~> 0.17.1'
