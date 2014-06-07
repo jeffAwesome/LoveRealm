@@ -10,4 +10,7 @@ $(document).ready ->
 $(document).bind "click", ->
   $.sidr "close", "respNav"
   return
-#
+
+$(document).ready ->
+  $("a.btn").popover placement: "bottom"
+  return
