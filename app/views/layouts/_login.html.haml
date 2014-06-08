@@ -1,5 +1,7 @@
 %li.login-user.clearfix
   %span.user-icon
     = image_tag "login.png"
-  = link_to 'Login', '#'
+  = link_to 'Login', '#', 'data-toggle' => "dropdown", 'class' => '.btn btn-default login'
+  %ul.dropdown-menu{"aria-labelledby" => "dLabel", role: "menu"}
+    %P Random coente insie
 %li.join= link_to 'Join', '#'

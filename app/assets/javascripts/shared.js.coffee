@@ -1,5 +1,5 @@
 $(document).ready ->
-  $(".btn-navbar").sidr
+###  $(".btn-navbar").sidr
     name: "respNav"
     source: ".nav-collapse"
 
@@ -10,4 +10,7 @@ $(document).ready ->
 $(document).bind "click", ->
   $.sidr "close", "respNav"
   return
+###
+
+
 #
