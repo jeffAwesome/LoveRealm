@@ -12,5 +12,5 @@ $(document).bind "click", ->
   return
 
 $(document).ready ->
-  $("a.btn").popover placement: "bottom"
+  $(".btn").popover placement: "bottom"
   return
