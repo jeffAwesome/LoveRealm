@@ -1,15 +1,15 @@
-$(document).ready ->
-  $(".btn-navbar").sidr
-    name: "respNav"
-    source: ".nav-collapse"
+#$(document).ready ->
+#  $(".btn-navbar").sidr
+#    name: "respNav"
+ #   source: ".nav-collapse"
 
-  return
+#  return
 
 
 #this code is close sidr menu if clicked outside  {optional}
-$(document).bind "click", ->
-  $.sidr "close", "respNav"
-  return
+#$(document).bind "click", ->
+ # $.sidr "close", "respNav"
+  #return
 
 $(document).ready ->
   $(".btn").popover placement: "bottom"
