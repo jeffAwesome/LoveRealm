@@ -1,4 +1,6 @@
 LoveRealm::Application.routes.draw do
+  get "users/index"
+  resources :users
   devise_for :users
   root 'home#index'
 
