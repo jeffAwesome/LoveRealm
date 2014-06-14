@@ -1,5 +1,5 @@
 LoveRealm::Application.routes.draw do
-  get "users/index"
+  get "users/show"
   resources :users
   devise_for :users
   root 'home#index'

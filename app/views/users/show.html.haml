@@ -1,12 +1,50 @@
 .row
-  .user-aside.col-lg-3
-    %img{:src => "../assets/meadow.jpg", :width => "100%", :height => "400px"}
+  .user-aside.col-lg-4
+    %img{:src => "../assets/praying-man.jpg", :width => "100%", :height => "400px"}
     .user-info
-      %img{:class => "user-icon", :src => "../assets/profile.jpg", :width => "120px", :height => "120px"}
-      %h4
+      %img{:class => "user-image", :src => "../assets/profile.jpg", :width => "120px", :height => "120px"}
+      %h3
         Luke Holloway
+      %h4
+        500 Loves
+        |
+        %a{:href => "#"} &hearts; Luke
       %p
-        hello world
-  .user-activity.col-lg-9
+        Dev. Short Bio boring stuff goes here.
+        %br
+        Registered: X Month, 201X
+        %br
+        Love Score: 10
+        %br
+        %br
+
+        Ranking: 
+        %a{:href => "#"} 8th Most Loved Person
+        %br
+        %br
+
+        %a{:href => "#"} Increase your ranking
+  .user-activity.col-lg-8
+    .row.activity
+      .col-lg-5
+        %h6
+          Below are posts written by Luke Holloway
+      .col-lg-4
+        %h6
+          Report Luke Holloway
+      .col-lg-3
+        %h6
+          %a{:href => "#"} Contact Luke
+      %hr
+    %h2
+      Sample Post title #1
     %p
-      hello again
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque tellus at velit rutrum auctor. Phasellus vel ligula sit amet justo sagittis blandit...
+    %p.published
+      Published on X, Month, 201X. 20 People Love this Post. 5 Comments
+    %h2
+      Sample Post title #2
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque tellus at velit rutrum auctor. Phasellus vel ligula sit amet justo sagittis blandit...
+    %p.published
+      Published on X, Month, 201X. 20 People Love this Post. 5 Comments
