@@ -49,11 +49,6 @@ ActiveRecord::Schema.define(version: 20140612044540) do
     t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
-    t.string   "provider"
-    t.string   "uid"
-=======
->>>>>>> Single SIgn On application
     t.string   "name"
   end
 
