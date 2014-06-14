@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, :finish_signup
+  #before_action :set_user, :finish_signup, :only => [:index]
 
   def index
     @users = User.all
@@ -11,13 +11,16 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
-    end
+    #@user = User.find(params[:id])
+#    respond_to do |format|
+#      format.html # show.html.erb
+#      format.xml  { render :xml => @user }
+#    end
   end
+
+
   def finish_signup
+    set_user
     if request.patch? && params[:user] #&& params[:user][:email]
       if current_user.update(user_params)
         current_user.skip_reconfirmation!
