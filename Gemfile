@@ -60,3 +60,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
 end
+
+group :staging, :production do
+  gem 'rails_12factor'
+end
