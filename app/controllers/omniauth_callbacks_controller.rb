@@ -26,4 +26,4 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       finish_signup_path(resource)
     end
   end
-endß
+end
