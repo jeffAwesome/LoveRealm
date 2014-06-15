@@ -1,5 +1,6 @@
 LoveRealm::Application.routes.draw do
 
+  get "dashboard/index"
   %w( 404 422 500 ).each do |code|
     get code, :to => "errors#show", :code => code
   end
@@ -15,7 +16,12 @@ LoveRealm::Application.routes.draw do
   #resources :users
   get 'profile/:id' => 'users#show', :as => :users
 
+  get '/dashboard/', to: 'dashboard#index'
 
+  authenticated :user do
+    # Rails 4 users must specify the 'as' option to give it a unique name
+    root :to => "dashboard#index", :as => "authenticated_root"
+  end
 
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
