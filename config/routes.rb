@@ -5,6 +5,7 @@ LoveRealm::Application.routes.draw do
   end
 
   get '/post', to: 'posts#index'
+  get '/post/:id', to: 'posts#show'
 
   get 'profile/:id' => 'users#show', :as => :users
 
