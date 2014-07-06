@@ -4,6 +4,8 @@ LoveRealm::Application.routes.draw do
     get code, :to => "errors#show", :code => code
   end
 
+  get '/post', to: 'posts#index'
+
   get 'profile/:id' => 'users#show', :as => :users
 
   get '/dashboard/', to: 'dashboard#index'
