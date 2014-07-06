@@ -4,15 +4,6 @@ LoveRealm::Application.routes.draw do
     get code, :to => "errors#show", :code => code
   end
 
-  #get "users/show"
-  #get '/patients/:id', to: 'users#show'
-  #match 'show/:id' => 'users#show', via: [:get]
-  #resources :users
-  #match "/profile" => "users#show", :as => 'profile'
-  #get "users/show", to: "users#show"
-  #match '/love/' => 'profiles#show', via: [:get], :as => :profile
-  #match '/profile/:id/' => 'profiles#show', via: [:get], :as => :profile
-  #resources :users
   get 'profile/:id' => 'users#show', :as => :users
 
   get '/dashboard/', to: 'dashboard#index'
